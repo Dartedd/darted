@@ -1,7 +1,6 @@
 import requests
 import socket
 import os
-import win32com.shell.shell as shell
 import re
 import json
 import shutil
